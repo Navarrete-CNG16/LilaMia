@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LilaMia</title>
+    <link rel="stylesheet" href="css/style2.css">
+  
+  <style>
+		.btnrosab {
+		  background-color: rosybrown;
+		}
+        .btnazulr {
+		  background-color: rgb(29, 25, 253);
+		}
+        .btnrosaF {
+		  background-color: rgb(237, 99, 232);
+		}
+        .btngris {
+		  background-color: rgb(168, 167, 167);
+		}
+		.btnverdeM {
+		  background-color: rgb(41, 106, 25);
+		}
+        .btnverdeF {
+		  background-color: rgb(89, 254, 6);
+		}
+        .btnBlanco {
+		  background-color: rgb(255, 253, 253);
+		}
+        .btnNegro {
+		  background-color: rgb(0, 0, 0);
+		}
+
+	  </style>
+</head>
+
+
+<body>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="./imgI/LM.png" alt="">
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="./images/cart.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+ <form 
+            action="https://formsubmit.co/cnavarretegandara@gmail.com" 
+            method="POST">
+            <div class="cart-products" id="products-id">
+                
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi Lista</h3>
+                <div class="card-items">
+                    
+                </div>
+                <h2>Total: $<strong class="price-total">0</strong> </h2>
+                
+                <div>
+                    <label>Nombre
+                        <input type="text" name="name" required></label> <br>
+                    <label>Telefono
+                        <input type="number" name="Telefono" required></label> <br>
+                </div>
+                 <button type="submit">ENVIAR</button><br>
+            
+            </div>
+        </form>
+   
+
+
+        </div>
+
+        <div id="inicio">
+        <img src="imgI/burger.svg" alt="" class="burger">
+        <nav class="menu-navegacion">
+              <a href="index.html" class="active">Inicio</a>
+			  <a href="#Catàlogo-LilaMia">Catálogo</a>
+			  <a href="contacto.html">Contacto</a>
+			  <a href="../micarrito/LilaMiaadmin/index.html">LilaMiaAdmin</a>
+		</nav>
+        </div>
+   </header>
+
+
+
+    <section class="container">
+        <div class="products">
+<!--LEGGINS LISO 2,3,4,12 -->
+            <div class="carts">
+                <div>
+                    <img src="./images/products/12.jpg" alt="">
+                    <p>$<span>319</span></p>
+                </div>
+	<!--div class="bott">
+					<button class="butt"> 1
+			 		</button>
+					 <button class="butt"> 2
+					</button>
+                    <button class="butt">3
+
+                    </button>
+	</div-->
+    <p class="title">Unitalla</p>
+                <p class="title">Leggins Liso</p>
+                <a href="" data-id="1" class="btn-add-cart">Añadir al carrito</a>
+            </div>
+
+<!--LEGGINS LISO s/c Imagenes 5 y 6-->
+            <div class="carts">
+                <div>
+                    <img src="./images/products/5.jpg" alt="">
+                    <p>$<span>279</span></p>
+                </div>
+                <!--div class="bott">
+					<button class="butt"> 1
+			 		</button>
+					 <button class="butt"> 2
+					</button>
+	</div--><p class="title">Unitalla</p>
+                <p class="title"> Leggins Liso sin costuras</p>
+                <a href="" class="btn-add-cart" data-id="2">Añadir al carrito</a>
+            </div>
+<!--LEGGINS Superheroes Imagenes 7,8,9,10-->          
+            <div class="carts">
+                <div>
+                    <img src="./images/products/7.jpg" alt="">
+                    <p>$<span>319</span></p>
+                </div>
+                <p class="title">Unitalla</p>
+                <!--div class="bott">
+					<button class="butt"> 1
+			 		</button>
+					 <button class="butt"> 2
+					</button>
+                    <button class="butt"> 3
+					</button>
+                    <button class="butt"> 4
+					</button>
+	            </div-->
+                <p class="title"> Leggins Super Hèroes</p>
+                <a href="" data-id="3" class="btn-add-cart">Añadir al carrito</a>
+            </div>
+<!--LEGGINS Estampados-->
+            <div class="carts">
+                <div>
+                    <img src="./images/products/11.jpg" alt="">
+                    <p>$<span>319</span></p>
+                </div>
+                <!--div class="bott">
+					<button class="butt"> 1
+			 		</button>
+					 <button class="butt"> 2
+					</button>
+                    <button class="butt"> 3
+					</button>
+	            </div-->
+                <p class="title">Unitalla</p>
+                <p class="title"> Leggins Estampados</p>
+                <a href="" data-id="4" class="btn-add-cart">Añadir al carrito</a>
+            </div>
+<!--Licra Americanos-->
+            <div class="carts">
+                <div>
+                    <img src="./images/products/13.jpg" alt="">
+                    <p>$<span>399</span></p>
+                </div>
+                <!--div class="bott">
+					<button class="butt"> 1
+			 		</button>
+					 <button class="butt"> 2
+					</button>
+                    <button class="butt"> 3
+					</button>
+	            </div-->
+                <p class="title">Unitalla</p>
+                <p class="title"> Licra Americana</p>
+                <a href="" data-id="5" class="btn-add-cart">Añadir al carrito</a>
+            </div>
+<!-- Capri-->
+            <div class="carts">
+                <div>
+                    <img src="./images/products/14.jpg" alt="">
+                    <p>$<span>399</span></p>
+                </div>
+                <!--div class="bott">
+					<button class="butt"> 1
+			 		</button>
+					 <button class="butt"> 2
+					</button>
+	            </div-->
+                <p class="title">Unitalla</p>
+                <p class="title"> Capri Licra Americana</p>
+                <a href="" data-id="6" class="btn-add-cart">Añadir al carrito</a>
+            </div>
+<!--Short pole-->
+            <div class="carts">
+                <div>
+                    <img src="./images/products/15.jpg" alt="">
+                    <p>$<span>279</span></p>
+                </div>
+    <!--div class="bott">
+					<button id="btnrosaF"> Rosa
+			 		</button>
+					 <button class="butt" > Azul
+					</button>
+                    <button class="butt">Gris
+                    </button>
+                    <button class="butt">Verde
+                    </button>
+	</div-->
+    <p class="title">Unitalla</p>
+                <p class="title"> Short Pole</p>
+                <a href="" data-id="7" class="btn-add-cart">Añadir al carrito</a>
+            </div>
+<!-- Short Biker -->
+            <div class="carts">
+                <div>
+                    <img src="./images/products/16.jpg" alt="">
+                    <p>$<span>309</span></p>
+                </div>
+                <p class="title">Unitalla</p>
+                <p class="title"> Short Biker</p>
+                <a href="" data-id="8" class="btn-add-cart">Añadir al Carrito</a>
+            </div>
+<!--Falda Circular-->
+            <div class="carts">
+                <div>
+                    <img src="./images/products/17.jpg" alt="">
+                    <p>$<span>309</span></p>
+                </div>
+                <!--div class="bott">
+					<button class="btnrosa"> Rosa
+			 		</button>
+					 <button class="butt"> Negra
+					</button>
+	</div--> <p class="title">Unitalla</p>
+                <p class="title"> Falda Circular</p>
+                <a href="" data-id="9" class="btn-add-cart">Añadir al carrito</a>
+            </div>
+<!--Crop Top Corto -->
+            <div class="carts">
+                <div>
+                    <img src="./images/products/18.jpg" alt="">
+                    <p>$<span>219</span></p>
+                </div>
+    <!--div class="bott">
+					<button class="butt" backgraund="rosa"> Gris
+			 		</button>
+					 <button class="butt"> Piel
+					</button>
+                    <button class="butt">Azul R
+                    </button>
+                    <button class="butt">Blanco
+                    </button>
+                    <button class="butt">Rosa Claro
+                    </button>
+	</div--><p class="title">Unitalla</p>
+                <p class="title"> Crop Top Corto</p>
+                <a href="" data-id="10" class="btn-add-cart">Añadir al carrito</a>
+            </div>
+<!--Crop Top Largo-->
+            <div class="carts">
+                <div>
+                    <img src="./images/products/19.gif" alt="">
+                    <p>$<span>249</span></p>
+                </div>
+    <!--div class="bott">
+					<button class="butt" backgraund="rosa"> Gris
+			 		</button>
+					 <button class="butt"> Rosa M
+					</button>
+                    <button class="butt">Azul Cielo
+                    </button>
+                    <button class="butt">Blanco
+                    </button>
+                    <button class="butt">Rosa Claro
+                    </button>
+                    <button class="butt">Negro
+                    </button>
+	</div--> <p class="title">Unitalla</p>
+                <p class="title"> Crop Top Largo</p>
+                <a href="" data-id="11" class="btn-add-cart">Añadir al carrito</a>
+            </div>
+<!--Top -->      
+			<div class="carts">
+                <div>
+                    <img src="./images/products/20.jpg" alt="">
+                    <p>$<span>349</span></p>
+                </div>
+   <!--div class="bott">
+					<button class="butt" backgraund="rosa"> Negro
+			 		</button>
+					 <button class="butt"> Rosa M
+					</button>
+                    <button class="butt">Azul Cielo
+                    </button>
+                    <button class="butt">Azul Rey
+                    </button>
+	</div--><p class="title">Unitalla</p>
+                <p class="title">Top</p>
+                <a href="" data-id="12" class="btn-add-cart">Añadir al carrito</a>
+            </div>
+<!--Top Shiny-->
+<div class="carts">
+    <div>
+        <img src="./images/products/21.jpg" alt="">
+        <p>$<span>399</span></p>
+    </div>
+    <p class="title"> Unitalla</p>
+    <p class="title"> Top Shiny</p>
+    <a href="" data-id="13" class="btn-add-cart">Añadir al carrito</a>
+</div>
+<!--Chamarra Afelpada-->
+<div class="carts">
+    <div>
+        <img src="./images/products/22.jpg" alt="">
+        <p>$<span>349</span></p>
+    </div>
+    <!--div class="bott">
+        <button class="butt"> Rosa
+         </button>
+         <button class="butt"> Gris
+        </button>
+        <button class="butt">Rojo
+        </button>
+</div--><p class="title">Unitalla</p>
+    <p class="title"> Chamarra Afelpada</p>
+    <a href="" data-id="14" class="btn-add-cart">Añadir al carrito</a>
+</div>
+<!--Chamarra Ropevientos -->
+<div class="carts">
+    <div>
+        <img src="./images/products/23.jpg" alt="">
+        <p>$<span>299</span></p>
+    </div>
+    <!--div class="bott">
+        <button class="butt" > Verde M
+         </button>
+         <button class="butt"> Verde Chillon
+        </button>
+        <button class="butt">Rosa
+        </button>
+        <button class="butt">Negra
+        </button>
+</div--><p class="title">Unitalla</p>
+    <p class="title"> Chamarra Ropevientos</p>
+    <a href="" data-id="15" class="btn-add-cart">Añadir al carrito</a>
+</div>
+<!--Conjunto Jogger y Sudadera-->
+<div class="carts">
+    <div>
+        <img src="./images/products/24.jpg" alt="">
+        <p>$<span>399</span></p>
+    </div>
+    <!--div class="bott">
+        <button class="butt" > Rosa
+         </button>
+         <button class="butt" >lila
+        </button>
+        <button class="butt">Verde
+        </button>
+</div--><p class="title">Unitalla</p>
+    <p class="title"> Conjunto Jogger y Sudadera</p>
+    <a href="" data-id="16" class="btn-add-cart">Añadir al carrito</a>
+</div>
+<!--Playera Imagenes 25 y 26-->
+<div class="carts">
+    <div>
+        <img src="./images/products/25.jpg" alt="">
+        <p>$<span>299</span></p>
+    </div>
+    <!--div class="bott">
+        <button class="butt"> 1
+         </button>
+         <button class="butt"> 2
+        </button>
+    </div--> <p class="title">Unitalla</p>
+    <p class="title"> Playera</p>
+    <a href="" data-id="17" class="btn-add-cart">Añadir al carrito</a>
+</div>
+<!--Conjuntos // Imagenes 28 y 29 y 32 y 34-->
+<div class="carts">
+    <div>
+        <img src="./images/products/28.jpg" alt="">
+        <p>$<span>299</span></p>
+    </div>
+    <!--div class="bott">
+        <button class="butt"> 1
+         </button>
+         <button class="butt"> 2
+        </button>
+        <button class="butt"> 3
+        </button>
+        <button class="butt"> 4
+        </button>
+    </div--><p class="title">Unitalla</p>
+    <p class="title"> Conjunto</p>
+    <a href="" data-id="20" class="btn-add-cart">Añadir al carrito</a>
+</div>
+<!--Conjunto imagenes 33 y 30-->
+<div class="carts">
+    <div>
+        <img src="./images/products/30.jpg" alt="">
+        <p>$<span>259</span></p>
+    </div>
+    <!--div class="bott">
+        <button class="butt"> 1
+         </button>
+         <button class="butt"> 2
+        </button>
+    </div--> <p class="title">Unitalla</p>
+    <p class="title"> Conjuntos Color Rojo</p>
+    <a href="" data-id="21" class="btn-add-cart">Añadir al carrito</a>
+</div>
+<!--Conjunto Short-->
+<div class="carts">
+    <div>
+        <img src="./images/products/31.jpg" alt="">
+        <p>$<span>199</span></p>
+    </div>
+    <p class="title">Unitalla</p>
+    <p class="title"> Conjunto Short Color Lila </p>
+    <a href="" data-id="22" class="btn-add-cart">Añadir al carrito</a>
+</div>
+
+    <!--div donde termina el cuadrado de imagenes-->    </div>
+    </section>
+
+    <footer>
+        <div id="grupo2">
+			<small>&copy; 2022 <b>LILA MIA</b> - Todos los derechos reservados.</small>
+		</div>
+    </footer>
+
+
+
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="js/custom.js" ></script>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+
+</body>
+</html>
