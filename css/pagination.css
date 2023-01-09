@@ -1,0 +1,57 @@
+  /* CLEARFIX */
+  
+  .cf:before,
+  .cf:after {
+      content: " ";
+      display: table;
+  }
+  
+  .cf:after {
+      clear: both;
+  }
+  
+  .cf {
+      *zoom: 1;
+  }
+  
+  /* GENERAL STYLES */
+  
+  .pagination{
+    padding: 1.875rem 0;
+  }
+  
+  .pagination ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .pagination a{
+    display: inline-block;
+    padding: .625rem 1.125rem;
+    color: #222;
+  }
+  
+  /* ONE */
+  
+  .p1 a{
+    text-decoration: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .p1 a.is-active{
+    background-color: #f18124;
+    border-radius: 100%;
+    color: #fff;
+  }
+  
+  /* TWO */
+  
+  .p2 .is-active li{
+    font-weight: bold;
+    border-bottom: .1875rem solid #f18124;
+  }

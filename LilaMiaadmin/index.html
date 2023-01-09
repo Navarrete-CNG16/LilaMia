@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdministradorLM</title>
+    <link rel="icon" href="imgLogin/logoarriba.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estiloslogin.css">
+    <style>
+        body {
+            background: url(imgLogin/LilaMiaPortada.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;    
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <div id="inicio">
+        <img src="imgLogin/burger.svg" alt="" class="burger">
+        <nav class="menu-navegacion">
+              <a href="../index.html" class="active">Inicio</a>
+        <a href="../cat2.html">Catálogo</a>
+        <a href="../contacto.html">Contacto</a>
+        <a href="#LilaMia-Admin">LilaMiaAdmin</a>
+      </nav>
+        </div>
+
+    <div class = "content">
+        <h1>Ingresar</h1>
+        <form action="login.php" method="POST">
+            <label for="username">Usuario: </label>
+            <br>
+            <input type="text" name="username" placeholder="Ingresa tu usuario :" required>
+            <br>
+            <label for="pass">Contraseña: </label>
+            <br>
+            <input type="password" name="password" placeholder="Ingresa tu contraseña :" required>
+            <br>
+            <input type="submit" value="Ingresar">
+        </form>
+        <!--<a href="main/member.html" class="regis">Registro</a>-->
+    </div>
+    <script src="js/menu.js"></script>
+<script src="js/lightbox.js"></script>
+</body>
+</html>

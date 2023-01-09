@@ -1,0 +1,464 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  height: 100vh;
+  background-image: linear-gradient(to top, rgba(161, 140, 209, 0.39) 0%, rgba(251, 194, 235, 0.4) 100%),
+  url(../imgs/banner3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.burger{
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: #ffffff;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20vw;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20vw;
+  height: 100%;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: transform .3s ease-in-out;
+  transform: translate(110%);
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.spread{
+  transform: translate(0);
+}
+
+.menu-navegacion a{
+  color: #fff;
+  text-decoration: none;
+}
+.logo{
+  width: 250px;
+  height: 200px;
+  cursor: pointer;
+  top: 75px;
+  right: 30px;
+}
+
+main{
+	background-image: url(../imgs/fondo.png);
+  width: auto;
+	height: 800px;
+}
+#logo{
+	width: auto;
+	height: 75px;
+	margin: 5px;
+}
+#logo{
+	width: auto;
+	height: 150px;
+	margin: 5px;
+}
+/* MENU NAV TOPNAV */
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: black;
+  color: yellow;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+/* Media queries */
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: black;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+  #containerMenu {
+  	background-color: black;
+  	display: flex;
+  	justify-content: center;
+    text-align: center;
+  }
+
+  .search-container {
+  	height: inherit;
+  	border: 5px solid black;
+  }
+
+  @media screen and (max-width: 400px) {
+  	.search-container input{
+  		display: none;
+  	}
+  	}
+
+.search-container .btos{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: yellow;
+  border: 2px solid purple;
+  margin: 0 10px;
+}
+
+.imgMin{
+  height: 100px;
+  width: auto;
+}
+
+
+
+/* Pie de pagina*/
+
+footer{
+  width: 100%;
+  background: url(../imgI/fondoB.png);;
+}
+#pie-pagina{
+  width: 100%;
+  
+  background-color:  rgba(250,250,250,255);
+}
+footer #grupo1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+footer #grupo1 #box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+footer #grupo1 #box img{
+  width: 180px;
+}
+
+footer #grupo1 #box1 h2{
+  color: black;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+footer #grupo1 #box p{
+  color: pinbablackkk;
+  margin-bottom: 10px;
+}
+
+footer #grupo1 #red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: rgb(240, 40, 74);
+  margin-right: 10px;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+footer #grupo1 #box a:hover{
+  color: rgb(0, 0, 0);
+}
+
+footer #grupo1 #box2{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+footer #grupo1 #box3{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+footer #grupo2{
+  color: rgb(8, 8, 8);
+  text-decoration: none;
+  text-align: center;
+}
+
+/****Slideshow****/
+.mySlides {display:none}
+.mySlides img {vertical-align: middle;}
+
+.slideshow-container{
+  max-width: 100%;
+  position:relative;
+  margin: auto;
+}
+.text{
+  color: #ccc;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+.numbertext{
+  color:#ccc;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+button{
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  color: white;
+  background-color: black;
+}
+button:hover{
+  background-color: black;
+}
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
+.color-acento{ color:black; }
+/*Lo mas destacado*/
+#LoDestacado{
+  background-color: rgb(30,30,30);
+  color: white;
+  text-align: center;
+}
+#LoDestacado .container{
+  padding: 150px 12px;
+}
+
+#LoDestacado h2{
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#LoDestacado p{
+  display: none;
+}
+
+#LoDestacado .carta{
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+
+
+
+/*Banner*/
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.banner{
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  animation: banner 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+   
+  
+}
+@keyframes banner{
+  0%, 20%{
+    background-image: url(../imgs/banner1.png);
+  }
+  25%, 45%{
+    background-image: url(../imgs/banner2.png);
+  }
+  50%, 70%{
+    background-image: url(../imgs/banner3.png);
+  }
+}
+
+
+
+
+.capa{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background:rgba(0,0,0,0.6);
+
+}
+.info h1{
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+.info h1{
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}.info p{
+  color: #c7c7c7;
+  line-height: 1.7;
+  margin-bottom:30px
+}
+.info a{
+  color: #fff;
+  text-decoration: none;
+  background: #3088e0;
+  padding: 16px 37px;
+}
+
+
+
+/*Botones*/
+
+.chamarra{
+  background-image: url(../imgs/chamarras.png);
+  border-radius: 110%;
+        height: 80%;
+        width:  10%;
+        background-size: 100% 100%;
+  margin-right: 10px;
+}
+.leggins{
+  display: inline-block;
+  background-image: url(../imgs/legg2.png);
+  border-radius: 110%;
+  height: 80%;
+  width: 10%;
+  background-size: 100% 100%;
+  margin-right: 10px;
+}
+.conjunto{
+  display: inline-block;
+  background-image: url(../imgs/conjunto.png);
+  border-radius: 110%;
+  height: 80%;
+  width:10%;
+  background-size: 100% 100%;
+  margin-right: 10px;
+}
+.short{
+  display: inline-block;
+  background-image: url(../imgs/short.png);
+  border-radius: 110%;
+        height: 80%;
+        width:10%;
+        background-size: 100% 100%;
+  margin-right: 10px;
+}
+.topsM{
+  display: inline-block;
+  background-image: url(../imgs/legg.png);
+  border-radius: 110%;
+        height: 80%;
+        width:10%;
+        background-size: 100% 100%;
+  margin-right: 10px;
+}
+.espacio{
+  width: 20px;
+  height: 15px;
+}
+.banner2{
+  width: 100%;
+  height: 250px;
+  justify-items: center;
+}
+.imgbanner{
+  width: 100%;
+  height: 300px;
+}
+.botones{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  align-content: center;
+}
